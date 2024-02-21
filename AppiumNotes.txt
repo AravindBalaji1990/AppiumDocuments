@@ -1,0 +1,35 @@
+Java - we have it in our syllabus(Intermidiate)
+
+Selenium(Optional)
+
+Appium -> it has its own commands
+apk.info -> application can be installed in the andorid devices
+
+eclipse (or) intellij
+
+nodejs -> npm -> node package manager -> this will al the liobrary files required for your appium installation
+
+
+Installation via nodejs for windows
+npm i -g appium
+appium driver install uiautomator2
+
+appium -v --> this will check the verison of appium installed
+
+
+Mac machine:
+npm i -g appium
+
+appium driver list -> this will list down all the drievrs it requires for appium to work
+
+appium driver install <name of the driver> -->generic 
+
+appium driver install uiautomator2
+
+- uiautomator2@2.34.1 [installed (npm)]
+- xcuitest@5.8.2 [installed (npm)]
+- mac2@1.8.8 [installed (npm)]
+- espresso@2.29.2 [installed (npm)]
+- safari@3.5.8 [installed (npm)]
+- gecko@1.2.9 [installed (npm)]
+- chromium@1.2.40 [installed (npm)]

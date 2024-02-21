@@ -1,0 +1,59 @@
+Cssselector:
+it makes use of attributes and its values
+it makes use of special characters to fileter the result
+it has only AND condition
+
+syntax:
+
+tagname[attribute ='value']
+
+Example:
+XCUIElementTypeStaticText[name='Create new task']
+android.widget.TextView[text='Sauce Labs Backpack']
+
+if we need to provide "and" condition
+android.widget.TextView[text='Sauce Labs Backpack'][content-desc='store item text']
+
+parent child hierarchy:
+android.view.ViewGroup[content-desc='store item']>android.view.ViewGroup>android.widget.TextView[text='Sauce Labs Backpack']
+
+incase if you need to ignore the parent/any tagname and then check for the element?
+
+skip the steps in between using giving space
+android.view.ViewGroup[content-desc='store item'] android.widget.TextView[text='Sauce Labs Backpack']
+
+in xpath how is this done
+//android.view.ViewGroup[@content-desc='store item']//android.widget.TextView[@text='Sauce Labs Backpack']
+
+special characters and what they do ?
+* -> check for the attributes contains a value 
+Example:
+tagname[attribute*=value]
+
+android.widget.TextView[text*=Labs]
+android.widget.TextView[text*=Sauce]
+android.widget.TextView[text*=Backpack]
+
+^ -> cehck for the attributes value starts with
+Example:
+tagname[attribute^=value]
+android.widget.TextView[text^='Sauce']
+
+$ -> chcek for the attribute value ends with
+Example:
+tagname[attribute$=value]
+android.widget.TextView[text$='Backpack']
+
+how to identify the childrens?
+
+nth-child(n) -> this will pick based ont he index value provided(index value is provided on n)
+Example:
+android.view.ViewGroup[content-desc='store Item']>android.view.ViewGroup:nth-child(1)
+first-child -> below the parent the first child
+android.view.ViewGroup[content-desc='store Item']>android.view.ViewGroup>android.widget.ImageView:first-child
+last-child -> below the parent the last child
+android.view.ViewGroup[content-desc='store Item']>android.view.ViewGroup>android.widget.ImageView:last-child
+
+other types:
+first-of-type -> first of the given/searching tagname (type)
+last-of-type-> last of the given/searching tagname (type)

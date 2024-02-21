@@ -1,0 +1,60 @@
+Xpath - Locators:
+
+Relative Xpath:
+//tagname[@attribute="value"]
+starts with // -> point me directly to the specific element
+followed by // we can put the tagname
+tagname followed by []
+within the square braces we need to mention the attribute with @ followed by the value
+
+//tagname[@attribute="value"]
+
+if we want to provide a condition
+//tagname[@attribute1="value" and @attribute2="value"] -> both the attribute condition eeds tobe satisfied
+//tagname[@attribute1="value" or @attribute2="value"]
+
+we can have anot condition as well,
+//tagname[@attribute1="value" not (@attribute2="value")]
+
+contains and starts-with - keywords 
+contains does not necessarily needs a full value a partial value will be fine
+//tagname[contains(@attribute,"value")]
+
+starts-with will search for the element attribute starting with
+//tagname[starts-with(@attribute,"value")]
+
+
+parent to child concept 
+using '/' to represent the child 
+//tagname[@attribute="value"]/tagname[@attribute="value"]
+
+//tagname[@attribute="value"]/child::tagname[@attribute="value"]
+
+following,preceding,following-sibling,preceding-sibling
+following -> what ever follows (What ever is below it, it will search)
+preceding -> what ever is above
+following-sibling -> what ever is following with in the same parent(WHat ever is below it but within the same parent)
+preceding-sibling -> what ever is above but with in the same parent
+
+//tagname[@attribute="value"]/following::tagname[@attribute="value"]
+//tagname[@attribute="value"]/following-sibling::tagname[@attribute="value"]
+//tagname[@attribute="value"]/preceding::tagname[@attribute="value"]
+//tagname[@attribute="value"]/preceding-sibling::tagname[@attribute="value"]
+
+_____
+Examples:
+//XCUIElementTypeOther/XCUIElementTypeNavigationBar[@name='Daily Tasks']
+//XCUIElementTypeOther/XCUIElementTypeNavigationBar[contains(@name,'Daily Tasks')]
+//XCUIElementTypeOther/XCUIElementTypeNavigationBar[contains(@name,' Tasks')]
+//XCUIElementTypeOther/XCUIElementTypeNavigationBar[contains(@name,'Daily ')]
+
+
+//XCUIElementTypeOther/XCUIElementTypeNavigationBar[starts-with(@name,'Daily ')]
+
+//XCUIElementTypeOther/child::XCUIElementTypeNavigationBar[starts-with(@name,'Daily ')]
+
+
+//XCUIElementTypeNavigationBar/parent::XCUIElementTypeOther
+
+//XCUIElementTypeButton[@name='circle' and @label='circle'][1]
+
