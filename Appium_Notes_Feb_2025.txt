@@ -1,0 +1,151 @@
+Basics of Appium Automation:
+
+What is a App ?
+Anything that we are going to install into our device we call it as app.
+Native - Any application that has been designed to work on a single paltform 
+IOS - SWift/Flutter
+Andorid - Java/Kotlin
+
+Web - Any application that works on a browser
+
+Hybrid - Any application that works as Native as well as a web platform within the app - Webview 
+
+Webview - part of the application where it calls the native browser of the device to invoke the websites
+
+How to identify ?
+We need to check it programatically -> there is a seggreagation like NATIVE and WEBVIEW_nameofthewebview
+
+Segregation of App extension?
+Extension available in the mobile application.
+.zip - when we use a application on a simulator - ios
+.ipa - when we use a application on a real deivce - ios
+.apk - when we use a application on a real device/simulator - andorid
+
+What is SDK?
+SDK - Software Development Kit 
+Any device ios/andorid should have the respective sdk installed to make it work
+Software version is nothing but the sdk
+
+Android - 15 
+IOS - 18.3
+
+What are the tools required ?
+1. Java
+2. Android Studio
+3. Xcode
+4. Appium Inspector
+5. Node/npm
+6. Intellij / Eclipse
+
+Simulator vs Emulators
+Simulator - IOS - Apple - creation of software 
+Emulators - Android - creation of devices
+
+Emulator:
+Definition: An emulator mimics both the hardware and software of the real device
+PLatform : Android 
+Example: Android EMulator with Andorid studio
+Performance:Slower compared to reals device but it replicates tge entire device environment
+Use case:Used for testing a sspecific device behaviour - hardware performance, network conditions and system level interaction
+Realistic Testing: More accurate
+
+Simulator:
+Definition: Simulator mimics only the software environment of a device but does not replicate the hardware components
+PLatform : IOS testing
+Example: Xcode -> simulator 
+Performance: Faster that the emulator because uts not simulating the behaviour if the hardware
+Realistic Testing: Less accurate
+Usecase:Used to test the application ona software rather than a hardware 
+
+MAC - emulator/simulator/Real devices/ cloud environment(Android/IOS)
+Windows - Emulator/ cloud environment(Android/IOS)
+
+Cloud Env - Browser stack /Sauce lab
+
+
+What is Node and NPM - Install Node
+Node/NPM - Node Package Manager
+any dependencies that you are required to install in a environment will be doanlaoded with the help of Node
+
+
+What is the difference between appium 1.x.x vs 2.x.x
+1.x.x -> appium for desktop
+monolithic Architecture all the driver and functionality are within the driver
+Drivers - UIAutomator1,xcuitest bundled in the appium
+no plugin support
+do not support json wired protocol
+basic command line
+many server flags to be configured
+issues with dependencies 
+
+
+2.x.x -> appium with npm 
+Modular architecture  - drivers nad plugins are mapped seprately - we need to install or uninstall seprately
+When we do a individual installation of the driver then dependecies where reduced 
+2.x.x supports the plugins options
+it supports json wired protocol
+New set of command line where you can segregate drivers and plugins
+Server flags are repplaced or reduced 
+Faster when compared to 1.x.x
+
+
+
+Apple Account creation - apple developer account
+Cloud Environment 
+Git Hub 
+
+Core Java
+Java - installation 
+Eclipse /Intellij/vs code
+
+JDK - Java development Kit
+JRE - Java Runtime Environment
+JVM - Java Virtual machine
+
+
+Andorid - andorid studio - emulator
+IOS - xcode /xsimulator - simulator
+
+
+
+String - Regex
+String Buffer , String Builder, String Tokenizer
+
+Constructor:
+1.Constructor is having the same name as that of class name
+2.Constrcutor is always used to initialise the data at the class level
+3. two types: default constructor/ parameterised constrcutor
+
+OOPS- Encapsulation, Inheritance, polymorphism,Abstraction
+
+Encapsulation:
+1. Hiding the data - encapsulation
+2. data is hidden or wrapped by a variable or methods
+3. usually encapsulation will have private variables so that it cannot be accessed outside the class directly
+ 4. Example: to retrive the data from data base , to Retrieve the data froma api 
+
+Inheritance:
+1. Parent to child 
+we can declare one class as a parent to another class.
+So that whatever the parent class is having the child class can use it 
+2. how the parentot child is represented -> "extends"
+Example: child class name extends parent class name
+
+Scenario: if we have both the variable/method name in parent same as child then how can we do it via inheritance,
+
+Super -> this is keyword in java where it will point always to the parent.
+since it is a keyword its is always non-static . you cannot use this directly in the main method
+
+Multiple Inheritance - Java does not support multiple inheritnace but it indirectly supportes by using Iterface concept
+
+
+Multiple inhertiance -> one child - multiple parents
+Interface is something like a class where it has methods or variables woithout any decalration so that when yuo call this mehtod sor variables in any part of other class you can represent its own implementation.
+one method from interface - can have multiple implementations from different class
+
+every interface can be represented in a class with keyword "implements" and when the class reprsents the interface it will have a annotation called @override above the methods. This is useful when a methods from differnt class is represented
+
+we can collaborate interface and inheritance but the extends keyword should be first then implements
+
+Collections
+Generics
