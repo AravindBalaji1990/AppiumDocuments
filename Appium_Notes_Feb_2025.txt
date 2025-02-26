@@ -147,5 +147,15 @@ every interface can be represented in a class with keyword "implements" and when
 
 we can collaborate interface and inheritance but the extends keyword should be first then implements
 
+polymorphism - change in the method or variable
+Overloading:
+1.Method Overlaoding - method is getting overloaded with different datatypes in the parameter
+2. same method name and different parameter
+3. compile time polymorphism- before we execute the method we will be able to identify which method we need to use
+
+Overriding:
+
+Abstraction
+
 Collections
 Generics
