@@ -149,13 +149,35 @@ we can collaborate interface and inheritance but the extends keyword should be f
 
 polymorphism - change in the method or variable
 Overloading:
-1.Method Overlaoding - method is getting overloaded with different datatypes in the parameter
+1.Method Overloading - method is getting overloaded with different datatypes in the parameter
 2. same method name and different parameter
 3. compile time polymorphism- before we execute the method we will be able to identify which method we need to use
 
 Overriding:
+1.same method name and same parameter
+2. Runtime polymorphism
+3. overriding uses inheritance -> parent to child
+Advantage of using overriding:
+Runtime polymorphism - only when we runthe code we will know which implemnetaiton is being called
+Code Reusability - same mehtod name is reused by different class for differentt logic
+SOLID principles - open/closed principle 
 
-Abstraction
+Abstraction:
+1. Hiding the implementation details
+2. abstract keyword is required
+3. Inheritance is mandatory 
+4. if we make a class abstract the methods inside it also should be abstract
+5. abstract method cannot have a implementation
 
-Collections
+All methods inside a interface are abstract 
+
+Collections:
+it is similar to that of array where we adr going to store data as a whole
+a group of data we are going to store in the collections. Collections is nothing but a framework in the java, its used to store data.
+
+List - array List,Linked List
+Map - Hash map
+Set - Hash Set
+Dictionary - HashTable
+
 Generics
